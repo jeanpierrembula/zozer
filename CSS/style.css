@@ -1,0 +1,84 @@
+/* Ordre pour le style*/
+/*
+1. Polices personnalisées.
+2. Définition des styles principaux de la page (largeur du site, fond, couleur
+par défaut du texte).
+3. En-tête et liens de navigation.
+4. Bannière (représentant le pont de San Francisco).
+5. Section principale du corps de page, au centre.
+6. Pied de page (footer).
+*/
+
+@font-face
+
+{
+font-family: 'BallparkWeiner';
+src: url('polices/ballpark.eot');
+src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+url('polices/ballpark.woff') format('woff'),
+url('polices/ballpark.ttf') format('truetype'),
+url('polices/ballpark.svg#BallparkWeiner') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face
+{
+font-family: 'Dayrom';
+src: url('polices/dayrom.eot');
+src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+url('polices/dayrom.woff') format('woff'),
+url('polices/dayrom.ttf') format('truetype'),
+url('polices/dayrom.svg#Dayrom') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+/* Définition des styles principaux */
+/* ________________________________ */
+
+body {
+    background: url("../IMG/yellow_background.png");
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+.bloc_page {
+    width: 65%;
+    margin: auto;
+}
+
+section h1, footer h1, nav a {
+    font-family: Dayrom;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* En-tête et liens de navigation */
+/* ______________________________ */
+
+header {
+    background: url('../IMG/line.png') repeat-x bottom;
+}
+
+#titre_principal {
+    display: inline-block;
+}
+
+header h1 {
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#logo, header h1 {
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
